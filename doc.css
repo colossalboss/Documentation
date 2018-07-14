@@ -1,0 +1,56 @@
+#main-doc {
+    display: flex;
+    /* grid-template-columns: 25% 75%;
+    grid-gap: 20px; */
+}
+
+#navbar {
+    width: 23%;
+    position: fixed;
+    height: 100vmin;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+    border-right: 3px solid grey;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+#content {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 75%;
+    overflow-y: auto;
+    display: grid;
+    /* justify-self: end; */
+}
+
+@media (min-width: 800px) {
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        overflow-y: scroll;
+    }
+}
+
+.grey {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-self: stretch;
+}
+
